@@ -1,0 +1,35 @@
+.counter button {
+    width: 70px;
+    aspect-ratio: 1/1;
+    border: 0;
+    font-size: 20px;
+    border-radius: 200px;
+}
+
+button:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.counter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    margin: 3rem 0;
+}
+
+.counter img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    grid-column: 1/4;
+    width: 60px;
+   
+}
+
+.counter span {
+    width: 70px;
+    text-align: center;
+    font-size: 32px;
+    margin: 0 2rem;
+}

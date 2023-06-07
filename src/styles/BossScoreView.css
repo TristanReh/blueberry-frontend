@@ -1,0 +1,19 @@
+.bossScoreGrid {
+    background-color: white;
+    width: min-content;
+    display: grid;
+    grid-template-columns: 1fr 80px;
+
+    padding: 1rem;
+    border: 2px solid rgb(185, 185, 191);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.386);
+}
+
+.bossScoreGrid #displayName {
+    grid-column: 1/3;
+}
+
+.bossScoreGrid > span:nth-child(2n+1) {
+    text-align: right;
+}
