@@ -6,7 +6,7 @@ export function useBossScores(requestedName) {
 
     useEffect(() => {
         axios
-            .get(`http://localhost:8083/api/bosses?name=${requestedName}&filter=true`)
+            .get(`http://37.120.167.218:8083/api/bosses?name=${requestedName}&filter=true`)
             .then((res) => {
                 const bosses = res.data;
                 setBossScores(bosses);
