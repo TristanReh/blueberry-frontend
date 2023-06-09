@@ -1,14 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { Routes, Route } from "react-router-dom"
+import { BrowserRouter as PenisRouter, Routes, Route } from 'react-router-dom';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
-    <Routes>
-      <Route path="*" element={<App />} />
-    </Routes>
-  </React.StrictMode>
+    <PenisRouter>
+      <Routes>
+        <Route path="*" element={<App />} />
+      </Routes>
+    </PenisRouter>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
